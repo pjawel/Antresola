@@ -114,13 +114,13 @@ export default function App() {
               Pyszne jedzenie, rodzinna atmosfera i dbałość o najmniejszy detal to nasza specjalność. 
               Niezależnie od okazji, sprawimy, że ten dzień będzie wyjątkowy.
             </p>
-            <div className="grid grid-cols-2 gap-6 pt-4">
-              <div className="space-y-2">
-                <span className="block font-serif text-2xl font-normal text-natural-primary">Wielowiekowa</span>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-6 pt-4">
+              <div className="space-y-2 pb-4 sm:pb-0 border-b sm:border-b-0 border-natural-secondary/10">
+                <span className="block font-serif text-3xl sm:text-2xl font-normal text-natural-primary leading-none">Wielowiekowa</span>
                 <span className="text-[10px] uppercase tracking-widest text-natural-secondary font-bold">Tradycja gościnności</span>
               </div>
               <div className="space-y-2">
-                <span className="block font-serif text-2xl font-normal text-natural-primary">Wyjątkowe</span>
+                <span className="block font-serif text-3xl sm:text-2xl font-normal text-natural-primary leading-none">Wyjątkowe</span>
                 <span className="text-[10px] uppercase tracking-widest text-natural-secondary font-bold">Smaki kuchni</span>
               </div>
             </div>
