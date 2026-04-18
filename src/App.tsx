@@ -25,10 +25,10 @@ export default function App() {
     <div className="min-h-screen bg-natural-bg">
       {/* Navigation */}
       <nav className="fixed w-full z-50 bg-natural-white/80 backdrop-blur-md border-b border-natural-secondary/20">
-        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <div className="flex flex-col">
-            <span className="font-serif text-3xl font-normal tracking-tight text-natural-primary">Antresola</span>
-            <span className="text-[10px] uppercase tracking-[0.2em] text-natural-secondary -mt-1 font-semibold">Sala Bankietowa</span>
+        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between gap-4">
+          <div className="flex flex-col shrink-0">
+            <span className="font-serif text-2xl sm:text-3xl font-normal tracking-tight text-natural-primary leading-none">Antresola</span>
+            <span className="text-[9px] sm:text-[10px] uppercase tracking-[0.15em] text-natural-secondary mt-0.5 font-semibold">Sala Bankietowa</span>
           </div>
           <div className="hidden md:flex gap-8 text-xs uppercase tracking-widest font-semibold text-natural-text/70">
             <a href="#o-nas" className="hover:text-natural-primary transition-colors">O nas</a>
@@ -65,11 +65,11 @@ export default function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-block text-natural-primary text-sm uppercase tracking-[0.3em] font-semibold mb-4 drop-shadow-md">Witamy w Antresoli</span>
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-natural-white font-normal leading-[0.9] mb-8 drop-shadow-xl">
+            <span className="inline-block text-natural-primary text-xs sm:text-sm uppercase tracking-[0.2em] font-semibold mb-4 drop-shadow-md">Witamy w Antresoli</span>
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-natural-white font-normal leading-tight md:leading-[0.9] mb-8 drop-shadow-xl">
               Wyjątkowe Chwile <br /> <span className="italic">w Rodzinnym Gronie</span>
             </h1>
-            <p className="text-natural-white/90 text-lg md:text-xl max-w-2xl mx-auto font-light mb-10 leading-relaxed italic">
+            <p className="text-natural-white/90 text-base sm:text-lg md:text-xl max-w-2xl mx-auto font-light mb-10 leading-relaxed italic">
               Przestrzeń stworzona z myślą o Waszych najpiękniejszych uroczystościach. 
               Zadbamy o każdy szczegół, byście mogli cieszyć się czasem z bliskimi.
             </p>
@@ -94,8 +94,8 @@ export default function App() {
       </section>
 
       {/* Intro Section */}
-      <section id="o-nas" className="py-24 px-6 bg-natural-white relative overflow-hidden">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+      <section id="o-nas" className="py-16 md:py-24 px-6 bg-natural-white relative overflow-hidden">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 md:gap-16 items-center">
           <motion.div 
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -144,11 +144,11 @@ export default function App() {
       </section>
 
       {/* Oferta Section */}
-      <section id="oferta" className="py-24 px-6 bg-natural-bg border-y border-natural-secondary/10">
+      <section id="oferta" className="py-16 md:py-24 px-6 bg-natural-bg border-y border-natural-secondary/10">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16 space-y-4">
+          <div className="text-center mb-12 md:mb-16 space-y-4">
             <span className="uppercase tracking-[0.2em] text-xs font-bold text-natural-primary">Nasza Oferta</span>
-            <h2 className="font-serif text-4xl md:text-5xl font-normal text-natural-primary">Zorganizujemy Twoje Wydarzenie</h2>
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-normal text-natural-primary leading-tight">Zorganizujemy Twoje Wydarzenie</h2>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -183,12 +183,12 @@ export default function App() {
       </section>
 
       {/* Gallery Section */}
-      <section id="galeria" className="py-24 px-6 bg-natural-white overflow-hidden">
+      <section id="galeria" className="py-16 md:py-24 px-6 bg-natural-white overflow-hidden">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-12 gap-6">
             <div className="space-y-4">
               <span className="uppercase tracking-[0.2em] text-xs font-bold text-natural-primary">Galeria</span>
-              <h2 className="font-serif text-4xl md:text-5xl font-normal text-natural-primary">Zajrzyj do <span className="italic">środka</span></h2>
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-normal text-natural-primary leading-tight">Zajrzyj do <span className="italic">środka</span></h2>
             </div>
             <p className="max-w-sm text-natural-muted text-sm italic">
               Inspirujące dekoracje, smakowite potrawy i radosne chwile uchwycone w obiektywie.
@@ -224,14 +224,14 @@ export default function App() {
       </section>
 
       {/* Footer / Contact */}
-      <footer id="kontakt" className="bg-natural-white pt-24 pb-12 px-6 text-natural-text overflow-hidden border-t border-natural-secondary/10">
+      <footer id="kontakt" className="bg-natural-white py-16 md:pt-24 md:pb-12 px-6 text-natural-text overflow-hidden border-t border-natural-secondary/10">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 mb-24">
-            <div className="space-y-12">
+          <div className="grid lg:grid-cols-2 gap-12 md:gap-16 mb-16 md:mb-24">
+            <div className="space-y-10 md:space-y-12">
               <div className="space-y-4">
                 <span className="uppercase tracking-[0.2em] text-xs font-bold text-natural-primary">Bądźmy w kontakcie</span>
-                <h2 className="font-serif text-5xl md:text-6xl font-normal leading-tight text-natural-primary">
-                  Zaplanujmy <br /> Twój <span className="italic text-natural-secondary">Event</span>
+                <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-normal leading-tight text-natural-primary uppercase">
+                  Zaplanujmy <br /> Twój <span className="italic text-natural-secondary lowercase">Event</span>
                 </h2>
               </div>
               
